@@ -7,6 +7,14 @@ class TasksScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.lightBlueAccent,
+      body: SafeArea(
+        child: Column(
+          children: [
+            Icon(Icons.list),
+            Text('Todoey'),
+          ],
+        ),
+      ),
     );
   }
 }
