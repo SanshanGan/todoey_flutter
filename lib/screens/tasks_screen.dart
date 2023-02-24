@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mytodo/widgets/tasks_list.dart';
 
 class TasksScreen extends StatelessWidget {
   const TasksScreen({Key? key}) : super(key: key);
@@ -68,38 +69,3 @@ class TasksScreen extends StatelessWidget {
   }
 }
 
-class TasksList extends StatelessWidget {
-  const TasksList({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return ListView(
-      children: [
-        TaskTile(),
-        TaskTile(),
-        TaskTile(),
-      ],
-    );
-  }
-}
-
-class TaskTile extends StatelessWidget {
-  const TaskTile({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      title: Text('I am a task list.'),
-      trailing: Checkbox(
-        value: false,
-        onChanged: (bool? value) {
-          true;
-        },
-      ),
-    );
-  }
-}
