@@ -59,32 +59,43 @@ class TasksScreen extends StatelessWidget {
                     topLeft: Radius.circular(20.0),
                     topRight: Radius.circular(20.0),
                   )),
-              child: ListView(
-                children: [
-                  ListTile(
-                    title: Text('I am a task list.'),
-                    trailing: Checkbox(
-                      value: false,
-                      onChanged: (bool? value) {
-                        true;
-                      },
-                    ),
-                  ),
-                  ListTile(
-                    title: Text('I am a task list.'),
-                    trailing: Checkbox(
-                      value: false,
-                      onChanged: (bool? value) {
-                        true;
-                      },
-                    ),
-                  )
-                ],
-              ),
+              child: TaskList(),
             ),
           ),
         ],
       ),
+    );
+  }
+}
+
+class TaskList extends StatelessWidget {
+  const TaskList({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      children: [
+        ListTile(
+          title: Text('I am a task list.'),
+          trailing: Checkbox(
+            value: false,
+            onChanged: (bool? value) {
+              true;
+            },
+          ),
+        ),
+        ListTile(
+          title: Text('I am a task list.'),
+          trailing: Checkbox(
+            value: false,
+            onChanged: (bool? value) {
+              true;
+            },
+          ),
+        )
+      ],
     );
   }
 }
