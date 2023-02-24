@@ -23,25 +23,3 @@ class TaskTile extends StatelessWidget {
   }
  }
 
-
-// void checkboxCallback (bool? checkboxState) {
-//   setState(() {isChecked = checkboxState ?? false;});
-// }
-
-
-// class TaskCheckbox extends StatelessWidget {
-//   final bool checkboxState;
-//   final void Function(bool?) toggleCheckboxState;
-//
-//
-//   TaskCheckbox(this.checkboxState, this.toggleCheckboxState);
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Checkbox(
-//         activeColor: Colors.lightBlueAccent,
-//         value: checkboxState,
-//         onChanged: toggleCheckboxState,
-//     );
-//   }
-// }
