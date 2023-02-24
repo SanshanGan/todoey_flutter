@@ -16,8 +16,8 @@ class TasksScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            padding:
-                EdgeInsets.only(top: 60.0, left: 30.0, right: 30.0, bottom: 30.0),
+            padding: EdgeInsets.only(
+                top: 60.0, left: 30.0, right: 30.0, bottom: 30.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -52,14 +52,37 @@ class TasksScreen extends StatelessWidget {
           ),
           Expanded(
             child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 20.0),
               decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(20.0),
                     topRight: Radius.circular(20.0),
                   )),
+              child: ListView(
+                children: [
+                  ListTile(
+                    title: Text('I am a task list.'),
+                    trailing: Checkbox(
+                      value: false,
+                      onChanged: (bool? value) {
+                        true;
+                      },
+                    ),
+                  ),
+                  ListTile(
+                    title: Text('I am a task list.'),
+                    trailing: Checkbox(
+                      value: false,
+                      onChanged: (bool? value) {
+                        true;
+                      },
+                    ),
+                  )
+                ],
+              ),
             ),
-          )
+          ),
         ],
       ),
     );
