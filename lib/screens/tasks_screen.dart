@@ -59,7 +59,7 @@ class TasksScreen extends StatelessWidget {
                     topLeft: Radius.circular(20.0),
                     topRight: Radius.circular(20.0),
                   )),
-              child: TaskList(),
+              child: TasksList(),
             ),
           ),
         ],
@@ -68,8 +68,8 @@ class TasksScreen extends StatelessWidget {
   }
 }
 
-class TaskList extends StatelessWidget {
-  const TaskList({
+class TasksList extends StatelessWidget {
+  const TasksList({
     super.key,
   });
 
