@@ -5,19 +5,6 @@ import 'package:provider/provider.dart';
 import 'package:mytodo/models/task_data.dart';
 
 class TasksScreen extends StatelessWidget {
-//   @override
-//   State<TasksScreen> createState() => _TasksScreenState();
-// }
-//
-// class _TasksScreenState extends State<TasksScreen> {
-//
-//   late String newTaskTitle;
-//
-//   @override
-//   void initState() {
-//     super.initState();
-//     newTaskTitle = '';
-//   }
 
 
   @override
