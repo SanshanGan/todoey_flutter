@@ -18,11 +18,6 @@ class _TasksScreenState extends State<TasksScreen> {
     newTaskTitle = '';
   }
 
-  List<Task> tasks = [
-    Task(name: 'Buy food'),
-    Task(name: 'Buy soap'),
-    Task(name: 'Do something'),
-  ];
 
   @override
   Widget build(BuildContext context) {
