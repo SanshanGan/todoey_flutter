@@ -5,6 +5,8 @@ import 'package:provider/provider.dart';
 class AddTaskScreen extends StatelessWidget {
   late String newTaskTitle;
 
+  AddTaskScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -44,7 +46,7 @@ class AddTaskScreen extends StatelessWidget {
                 foregroundColor: MaterialStateProperty.all(Colors.white),
               ),
               onPressed: () {
-                Provider.of<TaskData>(context).addTask(newTaskTitle);
+                Provider.of<TaskData>(context, listen: false).addTask(newTaskTitle);
                 Navigator.pop(context);
               }
             )
